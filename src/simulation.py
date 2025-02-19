@@ -1,36 +1,41 @@
 import time
+from security import SecureV2XCommunication
 
 class V2XSimulation:
     def __init__(self):
         print(" Initializing V2X Smart Traffic Simulation...")
+        self.secure_comm = SecureV2XCommunication()  # Initialize encryption
 
     def simulate_traffic_density(self):
         print("\n Scenario: High Traffic Density")
-        print(" Traffic congestion increasing...")
-        
-        print(" Network latency increasing due to more vehicles...")
-        
-        print(" Simulation completed: Traffic density impact analyzed.\n")
+        message = "High traffic detected. Possible congestion ahead."
+        encrypted_msg = self.secure_comm.encrypt_message(message)
+        print(f" Encrypted Message Sent: {encrypted_msg}")
+        time.sleep(1)
+        decrypted_msg = self.secure_comm.decrypt_message(encrypted_msg)
+        print(f" Decrypted Message Received: {decrypted_msg}\n")
 
     def simulate_weather_conditions(self):
         print("\n Scenario: Adverse Weather Conditions")
-        print(" Simulating heavy rain affecting V2X signals...")
-        
-        print(" Reduced visibility causing delays in vehicle communication...")
-        
-        print(" Simulation completed: Weather impact analyzed.\n")
+        message = "Severe weather detected. Adjusting speed limits."
+        encrypted_msg = self.secure_comm.encrypt_message(message)
+        print(f" Encrypted Message Sent: {encrypted_msg}")
+        time.sleep(1)
+        decrypted_msg = self.secure_comm.decrypt_message(encrypted_msg)
+        print(f" Decrypted Message Received: {decrypted_msg}\n")
 
     def simulate_emergency_vehicle_priority(self):
         print("\n Scenario: Emergency Vehicle Priority")
-        print(" Detecting emergency vehicle in traffic...")
-        
-        print(" Giving priority by adjusting traffic signals...")
-        
-        print(" Simulation completed: Emergency vehicle priority system working.\n")
+        message = "Emergency vehicle detected. Clearing path."
+        encrypted_msg = self.secure_comm.encrypt_message(message)
+        print(f" Encrypted Message Sent: {encrypted_msg}")
+        time.sleep(1)
+        decrypted_msg = self.secure_comm.decrypt_message(encrypted_msg)
+        print(f" Decrypted Message Received: {decrypted_msg}\n")
 
     def run(self):
         while True:
-            print("\n Choose a scenario to simulate:")
+            print("\n🚦 Choose a scenario to simulate:")
             print("1️ High Traffic Density")
             print("2️ Adverse Weather Conditions")
             print("3️ Emergency Vehicle Priority")
