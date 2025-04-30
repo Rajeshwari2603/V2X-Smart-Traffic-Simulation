@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+    <vType id="car" accel="2.0" decel="4.5" length="5" maxSpeed="8" color="1,0,0"/>
+    <vType id="emergency" accel="3.0" decel="5.0" length="6" maxSpeed="10" color="0,1,0"/>
+
+    <route id="r1" edges="N_J J_S"/>
+    <route id="r2" edges="S_J J_N"/>
+    <route id="r3" edges="E_J J_W"/>
+    <route id="r4" edges="W_J J_E"/>
+    <route id="r5" edges="N_J J_E"/>
+    <route id="r6" edges="S_J J_W"/>
+
+    <vehicle id="car0" type="car" route="r1" depart="0"/>
+    <vehicle id="car1" type="car" route="r2" depart="2"/>
+    <vehicle id="car2" type="car" route="r3" depart="4"/>
+    <vehicle id="car3" type="car" route="r4" depart="6"/>
+    <vehicle id="car4" type="car" route="r5" depart="8"/>
+    <vehicle id="car5" type="car" route="r6" depart="10"/>
+    <vehicle id="em1" type="emergency" route="r1" depart="15"/>
+</routes>
