@@ -24,3 +24,16 @@ I built this project using **SUMO (Simulation of Urban MObility)** and **Python*
 - **Weather Integration:** Rain condition slows down vehicles and raises alerts (planned integration with OpenWeatherMap API)
 - **Live Dashboard:** GUI for real-time traffic state monitoring and simulation control
 - **Speed Monitoring:** Generates and visualizes vehicle speed graphs
+
+  ### Real-Time Dashboard  
+Displays live traffic status, emergency detection, rain toggle, and simulation alerts.
+![dashboard-status](https://github.com/user-attachments/assets/504e9fb0-4bbb-4201-a755-6a01e579c2c1)
+
+
+### Vehicle Speed Monitoring  
+**Graph showing average speed and emergency stops over time.**
+![speed-graph](https://github.com/user-attachments/assets/5780ec8c-9ff8-41b0-987c-e2759f91c587)
+
+### SUMO Simulation View  
+SUMO visualization of traffic flow through an X-junction.  
+ **Green vehicle represents the emergency vehicle, other vehicles yield to it.**![sumo-simulation](https://github.com/user-attachments/assets/1595de90-30f5-4ee4-ab4d-9fec5c8fd6a6)
