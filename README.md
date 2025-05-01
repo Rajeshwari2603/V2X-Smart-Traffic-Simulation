@@ -27,16 +27,16 @@ I built this project using **SUMO (Simulation of Urban MObility)** and **Python*
 
   ### Real-Time Dashboard  
 Displays live traffic status, emergency detection, rain toggle, and simulation alerts.
-![dashboard-status](https://github.com/user-attachments/assets/504e9fb0-4bbb-4201-a755-6a01e579c2c1)
-
+![Dashboard Status](dashboard-status.png)
 
 ### Vehicle Speed Monitoring  
 **Graph showing average speed and emergency stops over time.**
-![speed-graph](https://github.com/user-attachments/assets/5780ec8c-9ff8-41b0-987c-e2759f91c587)
+![Speed Graph](speed-graph.png)
 
 ### SUMO Simulation View  
 SUMO visualization of traffic flow through an X-junction.  
- **Green vehicle represents the emergency vehicle, other vehicles yield to it.**![sumo-simulation](https://github.com/user-attachments/assets/1595de90-30f5-4ee4-ab4d-9fec5c8fd6a6)
+ **Green vehicle represents the emergency vehicle, other vehicles yield to it.**
+ ![SUMO Simulation](sumo-simulation.png)
 
 ##  Sprint Summary
 
@@ -59,4 +59,8 @@ SUMO visualization of traffic flow through an X-junction.
 | Snapshot of current traffic simulation           |  Done | Tkinter "Screenshot" button implemented                                |
 | Live signal phase display                        |  Done | Signal status displayed live in GUI                                    |
 
+## 🔗 Repository & Commits
+
+- 🔍 Codebase: [GitHub Repository](https://github.com/Rajeshwari2603/V2X-Smart-Traffic-Simulation)
+- 📌 All commits: [View commit history](https://github.com/Rajeshwari2603/V2X-Smart-Traffic-Simulation/commits/main)
 
